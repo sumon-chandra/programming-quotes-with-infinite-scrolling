@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: lightblue;
+}
+h1 {
+  background-color: #eee;
+  padding: 1em;
+  color: #6a6a6a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.quotes {
+  width: 50%;
+  margin: 0 auto;
+}
+blockquote p {
+  font-size: 1.3em;
+}
+figure {
+  padding: 15px;
+  margin: 1em 2em;
+  background: #f9f8f8;
+  border-radius: 5px;
+  overflow: hidden;
+}
+figcaption {
+  padding-top: 0.5em;
+  font-style: italic;
+  font-weight: 800;
+}
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+.show {
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 6em;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .quotes {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.4em;
+    padding: 1em;
+  }
+}
